@@ -1,4 +1,7 @@
 /*
+ * beep2light is a fork of `script`.
+ * Modifications done for beep2light are copyrighted (c) 2006 Riku Palom√§ki
+ *
  * Copyright (c) 1980 Regents of the University of California.
  * All rights reserved.
  *
@@ -31,16 +34,7 @@
  * SUCH DAMAGE.
  */
 
-/*
- * 1999-02-22 Arkadiusz Mi∂kiewicz <misiek@pld.ORG.PL>
- * - added Native Language Support
- *
- * 2000-07-30 Per Andreas Buer <per@linpro.no> - added "q"-option
- */
 
-/*
- * script
- */
 #include <stdio.h>
 #include <stdlib.h>
 #include <paths.h>

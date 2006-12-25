@@ -1,0 +1,12 @@
+== Installing on Linux ==
+
+If you are using pure svn checkout, you have to run:
+$ autoreconf --install
+
+
+But normally just these normal lines:
+
+$ ./configure
+$ make
+$ sudo make install
+

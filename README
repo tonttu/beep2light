@@ -1,0 +1,9 @@
+beep2light
+
+beep2light converts terminal beeps into flashes of Thinklight (keyboard light in Thinkpad laptops). The program is a fork of script -program from util-linux/misc-utils -package, see copyright notes from beep2light.c or COPYING.
+
+Check out project homepage http://www.hyperteksti.net/projectit/beep2light for some info about this program.
+
+
+-- 
+Riku Palomäki <riku@palomaki.fi>
