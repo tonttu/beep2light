@@ -94,7 +94,7 @@ int
 main(int argc, char **argv) {
 	extern int optind;
 	int ch;
-
+	
 	while ((ch = getopt(argc, argv, "ac:fqt")) != -1)
 		switch((char)ch) {
 		case 'c':
@@ -103,16 +103,16 @@ main(int argc, char **argv) {
 		case '?':
 		default:
 			fprintf(stderr,
-				"usage: tlight [-c cmd] [file]\n");
+				"usage: beep2light [-c cmd] [thinklight device]\n");
 			exit(1);
 		}
 	argc -= optind;
 	argv += optind;
-
+	
 	if (argc > 0)
 		fname = argv[0];
 	else {
-		fname = "typescript";
+		fname = "/proc/acpi/ibm/light";
 	}
 
 	shell = getenv("SHELL");
@@ -193,9 +193,9 @@ dooutput() {
 	char *p;
 	char *end;
 
-	FILE* led = fopen("/proc/acpi/ibm/light", "w");
+	FILE* led = fopen(fname, "w");
 	if (!led) {
-		fprintf(stderr, "open /proc/acpi/ibm/light failed\n");
+		fprintf(stderr, "open %s failed\n", fname);
 		fail();
 	}
 
