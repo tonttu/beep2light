@@ -1,6 +1,6 @@
 == Installing on Linux ==
 
-If you are using pure svn checkout, you have to run:
+If you are using pure git clone, you have to run:
 $ autoreconf --install
 
 
